@@ -31,10 +31,63 @@ p {
     max-width: fit-content;
 }
 
+#car_banner {
+    transition: transform 0.5s ease;
+}
+
+#car_banner:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes flip {
+    0% {
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(600px) rotateY(180deg);
+    }
+}
+
+.cars-images img {
+    transition: transform 1s;
+}
+
+.moving_creta:hover {
+    animation: flip 1s forwards;
+}
+
+.verna_interior:hover {
+    animation: flip 1s forwards;
+    animation-delay: 0.2s;
+}
+
+.ioniqelectric:hover {
+    animation: flip 1s forwards;
+    animation-delay: 0.4s;
+}
+
+.alcazar:hover {
+    animation: flip 1s forwards;
+    animation-delay: 0.6s;
+}
+
 #contact-base {
     color: rgb(0, 0, 66);
     background: rgb(190, 188, 188);
     bottom: 0;
+}
+
+
+#smartsense_section {
+    background: rgb(255, 111, 0);
+    color: whitesmoke;
+}
+
+#infotainment-section {
+    background: rgb(255, 196, 0);
+    color: whitesmoke;
 }
 
 footer,
