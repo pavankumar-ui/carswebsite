@@ -79,6 +79,12 @@ p {
     bottom: 0;
 }
 
+.ecofriendly,
+.assurance,
+.card {
+    box-shadow: 3px 0 3px 0;
+
+}
 
 #smartsense_section {
     background: rgb(255, 111, 0);
